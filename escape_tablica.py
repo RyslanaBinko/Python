@@ -1,0 +1,8 @@
+a= ("\\a   Bell (alert)")
+b= ("\\b   Backspace")
+c= ("\\n   New line")
+f= ("\\t   Horizontal tab")
+k= ("\\\   Backslash \\")
+g= ("\\\"   Double quotation mark \"")
+t= ("\\'   Single quotation mark \'")
+print (a,"\n",b,"\n",c,"\n",f,"\n",k,"\n",g,"\n",t)
