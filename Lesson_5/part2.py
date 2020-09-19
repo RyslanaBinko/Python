@@ -1,4 +1,4 @@
-string = input("Enter yor text ")
-count = string.count(" ")
-print("words ", len(string.split(' ')), "\n", "symbols ", len(string) - count)
+string = input("Enter your text ")
+print("words ", len(string.split(' ')))
+print("symbols ", len(string))
 
