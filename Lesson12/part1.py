@@ -11,15 +11,11 @@ class BankAccount:
 
     def deposit(self, money):
         self.__balance += money - (money / 100)
-        self.__transactions.append(money)
-        self.__transactions.append("deposit")
-        self.__transactions.append(date.today())
+        self.__transactions.append((money, "deposit", datetime.now()))
 
     def withdraw(self, money):
         self.__balance -= money + (money / 100)
-        self.__transactions.append(money)
-        self.__transactions.append("withdraw")
-        self.__transactions.append(date.today())
+        self.__transactions.append((money, "withdraw", datetime.now()))
 
     def get_balance(self):
         return self.__balance
